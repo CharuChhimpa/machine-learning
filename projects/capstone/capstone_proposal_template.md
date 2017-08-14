@@ -15,9 +15,9 @@ Heart disease is the leading cause of death in the world over the past 10 years.
 
 In this project we will train a model using Support Vector Machines to predict that a human being is suffering from a  heart disease. We will consider several features to do this classification.   
 
-**Task : ** To predict that a person is suffering from a heart disease or not.  
+** Task : ** To predict that a person is suffering from a heart disease or not.  
 
-**Performance : ** Accuracy - No. of correct predictions.  
+** Performance : ** Accuracy - No. of correct predictions.  
 
 
 
