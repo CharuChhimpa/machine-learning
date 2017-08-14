@@ -65,22 +65,32 @@ The different features that are used are  :
 -- Value 1: > 50% diameter narrowing   
 
 ### Solution Statement
-We will 
+
+I will use Supervised Learning approach to learn different features mentioned above and accordingly classify that the person is suffering from  heart disease or not. The dataset used is the Cleveland database which is pre processed before to seperate each of the 14 features by a comma. Supervised learning would finally provide us with binary output '0' or '1' based on the patient features.
+
+Final Model that I would use is Support Vector Machines. Support vector machines are a modern technique in the field of machine learning and have been successfully used in different fields of application.
+
 
 ### Benchmark Model
-_(approximately 1-2 paragraphs)_
 
-In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail.
+####Support Vector Machines   
+SVM’s are very much useful in data classification. SVM’s classify data by finding an optimal hyper plane separating the d – dimensional data into its two classes with a maximum interclass margin. SVM’s use so called kernel functions to cast data into a higher dimensional space where the data is separable.   
+
+SVM is a learning machine that plots the training vectors in high dimensional space and labels each vector by its class.
+SVM based on the principle of risk minimization which aims to, minimize the error rate. SVM uses a supervised learning approach for classifying data. That is, SVM produces a model based on a given training data which is then used for predicting the target values of the test data. Given a labelled training set (xi,yi), SVM require the solution of the following optimization problem to perform classification : 
+![](http://imgur.com/w2PBQYJ)
+
+
 
 ### Evaluation Metrics
-_(approx. 1-2 paragraphs)_
-
-In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms).
+** Prediction Accuracy  : ** The accuracy score will be used as an evaluation Metrics in this case. It would be calculated using the number of data points which are classified correctly.  
+As it is a classification problem, prediction accuracy turns out to be the best evaluation metrics.  
 
 ### Project Design
-_(approx. 1 page)_
 
-In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.
+#### Programming Language and Libraries
+
+
 
 -----------
 
