@@ -15,9 +15,9 @@ Heart disease is the leading cause of death in the world over the past 10 years.
 
 In this project we will train a model using Support Vector Machines to predict that a human being is suffering from a  heart disease. We will consider several features to do this classification.   
 
-** Task **  : To predict that a person is suffering from a heart disease or not.  
+**Task**  : To predict that a person is suffering from a heart disease or not.  
 
-** Performance ** : Accuracy - No. of correct predictions.  
+**Performance** : Accuracy - No. of correct predictions.  
 
 
 
@@ -84,7 +84,7 @@ SVM based on the principle of risk minimization which aims to, minimize the erro
 
 
 ### Evaluation Metrics
-** Prediction Accuracy **  : The accuracy score will be used as an evaluation Metrics in this case. It would be calculated using the number of data points which are classified correctly.  
+**Prediction Accuracy**  : The accuracy score will be used as an evaluation Metrics in this case. It would be calculated using the number of data points which are classified correctly.  
 As it is a classification problem, prediction accuracy turns out to be the best evaluation metrics.  
 
 ### Project Design
@@ -95,11 +95,11 @@ As it is a classification problem, prediction accuracy turns out to be the best 
 
 - **scikit-learn** : Open source machine learning library for python.  
 
-- **numpy ** : Python's numberical library.  
+- **numpy** : Python's numberical library.  
 
-- **matplotlib ** : For plotting graphs and plots.
+- **matplotlib** : For plotting graphs and plots.
 
-- **pandas, seaborn ** :  For data reading and visualization.  
+- **pandas, seaborn** :  For data reading and visualization.  
 
 #### Operation 
 First the dataset would be extracted in a proper format using the scikit-learn functions.    
