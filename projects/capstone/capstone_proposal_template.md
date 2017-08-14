@@ -1,12 +1,13 @@
 # Machine Learning Engineer Nanodegree
 ## Capstone Proposal
-Charu Chhimpa
+Charu Chhimpa  
 August 14th, 2017
 
 ### Domain Background
-_(approx. 1-2 paragraphs)_
+Advancement in the field of medicine have greatly improved our quality of life which can be clearly seen from the life expectancy rate. From 1816’s stethoscope to today’s handheld ultrasound machines, doctors have steadily adopted technology to advance healthcare. In past decades the healthcare community has taken major steps by adopting electronic healthcare measures. Rising cost of healthcare treatments have called for cost cutting measures. Machine learning can contribute significantly in the cost cutting measures and can reduce the price of these treatments by a significant amount.   
 
-In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required.
+Human Activity Recognition (HAR) has emerged as a powerful technology using which the cost for the treatments can be significantly reduced especially in the case of elderly and differently abled. Many researche attempts have been undergoing to accurately detect the human activities for e-health systems.
+
 
 ### Problem Statement
 _(approx. 1 paragraph)_
