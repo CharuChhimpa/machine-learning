@@ -10,9 +10,9 @@ Human Activity Recognition (HAR) has emerged as a powerful technology using whic
 
 
 ### Problem Statement
-_(approx. 1 paragraph)_
 
-In this section, clearly describe the problem that is to be solved. The problem described should be well defined and should have at least one relevant potential solution. Additionally, describe the problem thoroughly such that it is clear that the problem is quantifiable (the problem can be expressed in mathematical or logical terms) , measurable (the problem can be measured by some metric and clearly observed), and replicable (the problem can be reproduced and occurs more than once).
+In this project we will use RNN
+
 
 ### Datasets and Inputs
 _(approx. 2-3 paragraphs)_
