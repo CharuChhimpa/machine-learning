@@ -73,12 +73,13 @@ Final Model that I would use is Support Vector Machines. Support vector machines
 
 ### Benchmark Model
 
-####Support Vector Machines   
+#### Support Vector Machines   
 SVM’s are very much useful in data classification. SVM’s classify data by finding an optimal hyper plane separating the d – dimensional data into its two classes with a maximum interclass margin. SVM’s use so called kernel functions to cast data into a higher dimensional space where the data is separable.   
 
 SVM is a learning machine that plots the training vectors in high dimensional space and labels each vector by its class.
-SVM based on the principle of risk minimization which aims to, minimize the error rate. SVM uses a supervised learning approach for classifying data. That is, SVM produces a model based on a given training data which is then used for predicting the target values of the test data. Given a labelled training set (xi,yi), SVM require the solution of the following optimization problem to perform classification : 
-![](http://imgur.com/w2PBQYJ)
+SVM based on the principle of risk minimization which aims to, minimize the error rate. SVM uses a supervised learning approach for classifying data. That is, SVM produces a model based on a given training data which is then used for predicting the target values of the test data. Given a labelled training set (xi,yi), SVM require the solution of the following optimization problem to perform classification :   '
+
+![](http://imgur.com/w2PBQYJ.jpg)
 
 
 
@@ -89,6 +90,26 @@ As it is a classification problem, prediction accuracy turns out to be the best 
 ### Project Design
 
 #### Programming Language and Libraries
+
+- **Python2**  
+
+- **scikit-learn : ** Open source machine learning library for python.  
+
+- **numpy : ** Python's numberical library.  
+
+- **matplotlib : **  For plotting graphs and plots.
+
+- **pandas, seaborn : ** For data reading and visualization.  
+
+#### Operation 
+First the dataset would be extracted in a proper format using the scikit-learn functions.    
+
+And then the Support Vector Machine model would be trained using the processed dataset.  SVM functioning is explained above.
+
+Finally we can can calculate the prediction accuracy to see that how well our model is performing.  
+
+This would be the over all functioning of the algorithm.
+
 
 
 
