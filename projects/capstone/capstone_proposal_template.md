@@ -15,21 +15,57 @@ Heart disease is the leading cause of death in the world over the past 10 years.
 
 In this project we will train a model using Support Vector Machines to predict that a human being is suffering from a  heart disease. We will consider several features to do this classification.   
 
-** Task : ** To predict that a person is suffering from a heart disease or not.  
+** Task : **  To predict that a person is suffering from a heart disease or not.  
 
 ** Performance : ** Accuracy - No. of correct predictions.  
 
 
 
 ### Datasets and Inputs
-_(approx. 2-3 paragraphs)_
 
-In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem.
+I am using the UCI Heart Disease dataset for training the model. This database contains 76 attributes, but the best results are obtained using a subset of 14 of them. In particular, there is data from 4 hospitals but I will use the Cleveland Database because it is properly processed.  
+
+The different features that are used are  :   
+
+1. age: age in years   
+
+2. sex: sex (1 = male; 0 = female)   
+
+3. cp: chest pain type   
+-- Value 1: typical angina  
+-- Value 2: atypical angina    
+-- Value 3: non-anginal pain    
+-- Value 4: asymptomatic   
+
+4. trestbps: resting blood pressure (in mm Hg on admission to the hospital)   
+
+5. chol: serum cholestoral in mg/dl   
+
+6. fbs: (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)   
+
+7. restecg: resting electrocardiographic results   
+
+8. thalach: maximum heart rate achieved  
+
+9. exang: exercise induced angina (1 = yes; 0 = no)   
+
+10. oldpeak = ST depression induced by exercise relative to rest   
+
+11. slope: the slope of the peak exercise ST segment  
+-- Value 1: upsloping   
+-- Value 2: flat   
+-- Value 3: downsloping   
+
+12. ca: number of major vessels (0-3) colored by flourosopy   
+
+13. thal: 3 = normal; 6 = fixed defect; 7 = reversable defect   
+
+14. num: diagnosis of heart disease (angiographic disease status)  
+-- Value 0: < 50% diameter narrowing   
+-- Value 1: > 50% diameter narrowing   
 
 ### Solution Statement
-_(approx. 1 paragraph)_
-
-In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).
+We will 
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
@@ -48,10 +84,3 @@ In this final section, summarize a theoretical workflow for approaching a soluti
 
 -----------
 
-**Before submitting your proposal, ask yourself. . .**
-
-- Does the proposal you have written follow a well-organized structure similar to that of the project template?
-- Is each section (particularly **Solution Statement** and **Project Design**) written in a clear, concise and specific fashion? Are there any ambiguous terms or phrases that need clarification?
-- Would the intended audience of your project be able to understand your proposal?
-- Have you properly proofread your proposal to assure there are minimal grammatical and spelling mistakes?
-- Are all the resources used for this project correctly cited and referenced?
