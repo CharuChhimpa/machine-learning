@@ -1,10 +1,7 @@
 # Machine Learning Engineer Nanodegree
 ## Capstone Proposal
-Joe Udacity  
-December 31st, 2050
-
-## Proposal
-_(approx. 2-3 pages)_
+Charu Chhimpa
+August 14th, 2017
 
 ### Domain Background
 _(approx. 1-2 paragraphs)_
