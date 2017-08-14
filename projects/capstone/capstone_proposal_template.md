@@ -4,14 +4,21 @@ Charu Chhimpa
 August 14th, 2017
 
 ### Domain Background
-Advancement in the field of medicine have greatly improved our quality of life which can be clearly seen from the life expectancy rate. From 1816’s stethoscope to today’s handheld ultrasound machines, doctors have steadily adopted technology to advance healthcare. In past decades the healthcare community has taken major steps by adopting electronic healthcare measures. Rising cost of healthcare treatments have called for cost cutting measures. Machine learning can contribute significantly in the cost cutting measures and can reduce the price of these treatments by a significant amount.   
+Advancement in the field of medicine have greatly improved our quality of life which can be clearly seen from the life expectancy rate. From 1816’s stethoscope to today’s handheld ultrasound machines, doctors have steadily adopted technology to advance healthcare. In past decades the healthcare community has taken major steps by adopting electronic healthcare measures. Machine Learning can contribute significantly in the field of healthcare, it has great usage in cases like early disease detection, finding signs of early breakouts of epidemics, using clustering to figure out regions of epidemics, or finding the best air quality zones in countries with high air pollution.  
 
-Human Activity Recognition (HAR) has emerged as a powerful technology using which the cost for the treatments can be significantly reduced especially in the case of elderly and differently abled. Many researche attempts have been undergoing to accurately detect the human activities for e-health systems.
+Heart disease is the leading cause of death in the world over the past 10 years. Researches have been using several data mining techniques in the diagnosis of heart disease. Diabetes is a chronic disease that occurs when the pancreas does not produce enough insulin, or when the body cannot effectively use the insulin it produces. Most of these systems have successfully employed Machine learning methods such as Naïve Bayes and Support Vector Machines for the classification purpose. Support vector machines are a modern technique in the field of machine learning and have been successfully used in different fields of application. 
+
+
 
 
 ### Problem Statement
 
-In this project we will use RNN
+In this project we will train a model using Support Vector Machines to predict that a human being is suffering from a  heart disease. We will consider several features to do this classification.   
+
+**Task : ** To predict that a person is suffering from a heart disease or not.  
+
+**Performance : ** Accuracy - No. of correct predictions.  
+
 
 
 ### Datasets and Inputs
