@@ -93,7 +93,7 @@ As it is a classification problem, prediction accuracy turns out to be the best 
 
 - **Python2**  
 
-- **scikit-learn ** : Open source machine learning library for python.  
+- **scikit-learn** : Open source machine learning library for python.  
 
 - **numpy ** : Python's numberical library.  
 
