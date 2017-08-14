@@ -23,7 +23,8 @@ In this project we will train a model using Support Vector Machines to predict t
 
 ### Datasets and Inputs
 
-I am using the UCI Heart Disease dataset for training the model. This database contains 76 attributes, but the best results are obtained using a subset of 14 of them. In particular, there is data from 4 hospitals but I will use the Cleveland Database because it is properly processed.  
+I am using the UCI Heart Disease dataset for training the model. This database contains 76 attributes, but the best results are obtained using a subset of 14 of them. In particular, there is data from 4 hospitals but I will use the Cleveland Database because it is properly processed. The dataset link is : 
+**http://archive.ics.uci.edu/ml/datasets/heart+Disease**
 
 The different features that are used are  :   
 
