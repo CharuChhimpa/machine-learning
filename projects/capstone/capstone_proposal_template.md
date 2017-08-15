@@ -90,7 +90,7 @@ SVM based on the principle of risk minimization which aims to, minimize the erro
 As it is a binary classification problem, prediction accuracy turns out to be the best evaluation metrics.   
 If \hat{y}i is the predicted value of the i-th sample and yi is the corresponding true value, then the fraction of correct predictions over n_\text{samples} is defined as :   
                                 
-                                     ![](http://imgur.com/uzvxcmP.jpg)
+ ![](http://imgur.com/uzvxcmP.jpg)
 
 
 
