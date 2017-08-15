@@ -88,7 +88,7 @@ SVM based on the principle of risk minimization which aims to, minimize the erro
 ### Evaluation Metrics
 **Prediction Accuracy**  : The accuracy score will be used as an evaluation Metrics in this case. It would be calculated using the number of data points which are classified correctly.  
 As it is a binary classification problem, prediction accuracy turns out to be the best evaluation metrics.   
-If hat{y}\_i is the predicted value of the i-th sample and y\_i is the corresponding true value, then the fraction of correct predictions over n_samples is defined as :   
+If y_hat_i is the predicted value of the i-th sample and y_i is the corresponding true value, then the fraction of correct predictions over n_samples is defined as :   
                                 
  ![](http://imgur.com/uzvxcmP.jpg)
 
