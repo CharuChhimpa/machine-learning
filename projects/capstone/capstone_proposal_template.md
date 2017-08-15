@@ -6,7 +6,8 @@ August 14th, 2017
 ### Domain Background
 Advancement in the field of medicine have greatly improved our quality of life which can be clearly seen from the life expectancy rate. From 1816’s stethoscope to today’s handheld ultrasound machines, doctors have steadily adopted technology to advance healthcare. In past decades the healthcare community has taken major steps by adopting electronic healthcare measures. Machine Learning can contribute significantly in the field of healthcare, it has great usage in cases like early disease detection, finding signs of early breakouts of epidemics, using clustering to figure out regions of epidemics, or finding the best air quality zones in countries with high air pollution.  
 
-Heart disease is the leading cause of death in the world over the past 10 years. Researches have been using several data mining techniques in the diagnosis of heart disease. Diabetes is a chronic disease that occurs when the pancreas does not produce enough insulin, or when the body cannot effectively use the insulin it produces. Most of these systems have successfully employed Machine learning methods such as Naïve Bayes and Support Vector Machines for the classification purpose. Support vector machines are a modern technique in the field of machine learning and have been successfully used in different fields of application. 
+Heart disease is the leading cause of death in the world over the past 10 years. The World Health Organization reported that heart disease is the first leading cause of death in high and low income countries. There are several methods in the literature individually to diagnosis diabetes or heart disease. There is no automated diagnosis method to diagnose
+Heart disease for diabetic patient based on diabetes diagnosis attributes to our knowledge. Researches have been using several data mining techniques in the diagnosis of heart disease. Diabetes is a chronic disease that occurs when the pancreas does not produce enough insulin, or when the body cannot effectively use the insulin it produces. Most of these systems have successfully employed Machine learning methods such as Naïve Bayes and Support Vector Machines for the classification purpose. Support vector machines are a modern technique in the field of machine learning and have been successfully used in different fields of application. 
 
 
 
@@ -78,7 +79,7 @@ Final Model that I would use is Support Vector Machines. Support vector machines
 SVM’s are very much useful in data classification. SVM’s classify data by finding an optimal hyper plane separating the d – dimensional data into its two classes with a maximum interclass margin. SVM’s use so called kernel functions to cast data into a higher dimensional space where the data is separable.   
 
 SVM is a learning machine that plots the training vectors in high dimensional space and labels each vector by its class.
-SVM based on the principle of risk minimization which aims to, minimize the error rate. SVM uses a supervised learning approach for classifying data. That is, SVM produces a model based on a given training data which is then used for predicting the target values of the test data. Given a labelled training set (xi,yi), SVM require the solution of the following optimization problem to perform classification :   '
+SVM based on the principle of risk minimization which aims to, minimize the error rate. SVM uses a supervised learning approach for classifying data. That is, SVM produces a model based on a given training data which is then used for predicting the target values of the test data. Given a labelled training set (xi,yi), SVM require the solution of the following optimization problem to perform classification :   
 
 ![](http://imgur.com/w2PBQYJ.jpg)
 
@@ -86,7 +87,12 @@ SVM based on the principle of risk minimization which aims to, minimize the erro
 
 ### Evaluation Metrics
 **Prediction Accuracy**  : The accuracy score will be used as an evaluation Metrics in this case. It would be calculated using the number of data points which are classified correctly.  
-As it is a classification problem, prediction accuracy turns out to be the best evaluation metrics.  
+As it is a binary classification problem, prediction accuracy turns out to be the best evaluation metrics.   
+If \hat{y}i is the predicted value of the i-th sample and yi is the corresponding true value, then the fraction of correct predictions over n_\text{samples} is defined as :   
+                                
+                                     ![](http://imgur.com/uzvxcmP.jpg)
+
+
 
 ### Project Design
 
@@ -109,7 +115,13 @@ And then the Support Vector Machine model would be trained using the processed d
 
 Finally we can can calculate the prediction accuracy to see that how well our model is performing.  
 
-This would be the over all functioning of the algorithm.
+This would be the over all functioning of the algorithm.  
+
+#### References
+- https://link.springer.com/chapter/10.1007/978-3-642-27443-5_25    
+- http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.401.7117&rep=rep1&type=pdf
+- https://dzone.com/articles/a-tutorial-on-using-the-big-data-stack-and-machine  
+- https://hbr.org/2017/05/how-machine-learning-is-helping-us-predict-heart-disease-and-diabetes
 
 
 
