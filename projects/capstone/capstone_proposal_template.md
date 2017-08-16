@@ -24,7 +24,7 @@ In this project we will train a model using Support Vector Machines to predict t
 
 ### Datasets and Inputs
 
-I am using the UCI Heart Disease dataset for training the model. This database contains 76 attributes, but the best results are obtained using a subset of 14 of them. In particular, there is data from 4 hospitals but I will use the Cleveland Database because it is properly processed. The dataset link is : 
+I am using the UCI Heart Disease dataset for training the model. This database contains 76 attributes, but the best results are obtained using a subset of 14 of them. In particular, there is data from 4 hospitals but I will use the Cleveland Database because it is properly processed. The dataset have 303 instances. The dataset do not have a balanced label distribution. The dataset link is : 
 **http://archive.ics.uci.edu/ml/datasets/heart+Disease**
 
 The different features that are used are  :   
@@ -75,13 +75,19 @@ Final Model that I would use is Support Vector Machines. Support vector machines
 
 ### Benchmark Model
 
-#### Support Vector Machines   
-SVM’s are very much useful in data classification. SVM’s classify data by finding an optimal hyper plane separating the d – dimensional data into its two classes with a maximum interclass margin. SVM’s use so called kernel functions to cast data into a higher dimensional space where the data is separable.   
+#### Gaussian Naive Bayes
+In machine learning, naive Bayes classifiers are a family of simple probabilistic classifiers based on applying Bayes’ theorem with strong (naive) independence assumptions between the features.
 
-SVM is a learning machine that plots the training vectors in high dimensional space and labels each vector by its class.
-SVM based on the principle of risk minimization which aims to, minimize the error rate. SVM uses a supervised learning approach for classifying data. That is, SVM produces a model based on a given training data which is then used for predicting the target values of the test data. Given a labelled training set (xi,yi), SVM require the solution of the following optimization problem to perform classification :   
+When dealing with continuous data, a typical assumption is that the continuous values associated with each class are distributed according to a Gaussian distribution. For example, suppose the training data contains a continuous attribute, x. We first segment the data by the class, and then compute the mean and variance of x in each class. Let µc be the mean of
+the values in x associated with class c, and let σ^2_c be the variance of the values in x associated with class c. Suppose we have collected some observation value v. Then, the probability distribution of v given a class x, p(x=v), can be computed by plugging v into the equation for a Normal distribution parameterized by µc and σ^2_c. That is,  
 
-![](http://imgur.com/w2PBQYJ.jpg)
+![](http://imgur.com/4Un9Q5f.jpg)    
+
+I’ll be using the Naive Bayes classifier as the benchmark model because it will always predict either of the one class.  
+
+I’ll be looking to maximize the accuracy of the predictions using this model.
+
+
 
 
 
@@ -109,7 +115,7 @@ If y_hat_i is the predicted value of the i-th sample and y_i is the correspondin
 - **pandas, seaborn** :  For data reading and visualization.  
 
 #### Operation 
-First the dataset would be extracted in a proper format using the scikit-learn functions.    
+First the dataset would be extracted in a proper format using the scikit-learn functions. We will then convert all the categorical varaibles with more than two values into dummy variables. 
 
 And then the Support Vector Machine model would be trained using the processed dataset.  SVM functioning is explained above.
 
