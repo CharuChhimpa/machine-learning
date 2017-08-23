@@ -41,7 +41,7 @@ I am using the UCI Heart Disease dataset for training the model. There are 14 fe
 **http://archive.ics.uci.edu/ml/datasets/heart+Disease**   
 Below is the image descibing the dataset.
 
-![](http://imgur.com/anaIIgbg.jpg)
+![](http://imgur.com/g476e9q.jpg)
 
 
 ### Exploratory Visualization
