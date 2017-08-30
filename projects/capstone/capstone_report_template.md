@@ -93,7 +93,7 @@ The features which are having more than two values are converted to dummy variab
 ### Implementation
 First the Benchmark Model, Gaussian Naive Bayes is trained and it comes out to be with an accuracy of 78.33 %.  
 
-After that Support Vector Machines are trained using the sklearn SVC and it came out with an accuracy of   . For increasing the accurcay we are Optimizing logistic regression on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that yields the best accuracy score.  
+After that Support Vector Machines are trained using the sklearn SVC and it came out with an accuracy of  85% . For increasing the accurcay we are Optimizing logistic regression on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that yields the best accuracy score.  
 
 Try eliminating features with a non-significant coefficient, one by one, while keeping the model deviance as low as possible. We'll use this second method for the final results.  
 
@@ -108,14 +108,14 @@ By using this we will eliminate features with a non - significant coefficient, o
 ## IV. Results
 
 ### Model Evaluation and Validation
-The final model came out with the accuracy of   . The final features are selected on the basis of cross validation score. So, its a quite robust model tested properly.    
+The final model came out with the accuracy of 85%  . The final features are selected on the basis of cross validation score. So, its a quite robust model tested properly.    
 
-The initial model of SVMs is tuned properly to get a an accuracy of   .
+The initial model of SVMs is tuned properly to get a an accuracy of 85%.
 
 
 
 ### Justification
-The final model performs really well in comparison of the Benchmark model. Our benchmark was to acheive atleast 78% accuracy and our model acheives nearly    accuracy with a standard deviation of   . This clearly beats the benchmark model and is significant enough to solve the problem.
+The final model performs really well in comparison of the Benchmark model. Our benchmark was to acheive atleast 78% accuracy and our model acheives nearly  85%  accuracy with a standard deviation of  0.008% . This clearly beats the benchmark model and is significant enough to solve the problem.
 
 ## V. Conclusion
 
