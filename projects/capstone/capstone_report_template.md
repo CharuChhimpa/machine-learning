@@ -119,13 +119,6 @@ The final model performs really well in comparison of the Benchmark model. Our b
 
 ## V. Conclusion
 
-
-### Free-Form Visualization
-In this section, you will need to provide some form of visualization that emphasizes an important quality about the project. It is much more free-form, but should reasonably support a significant result or characteristic about the problem that you want to discuss. Questions to ask yourself when writing this section:
-- _Have you visualized a relevant or important quality about the problem, dataset, input data, or results?_
-- _Is the visualization thoroughly analyzed and discussed?_
-- _If a plot is provided, are the axes, title, and datum clearly defined?_
-
 ### Reflection
 The SVM model is properly trained and optimized using cross validation score. I faced a problem in slecting optimal model for this dataset then I tested it with several models and finally concluded on Support Vector Machines. The final accuracy of this model is quite good i.e.   
 
