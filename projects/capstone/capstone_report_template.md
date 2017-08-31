@@ -38,7 +38,44 @@ If y_hat_i is the predicted value of the i-th sample and y_i is the correspondin
 
 ### Data Exploration
 I am using the UCI Heart Disease dataset for training the model. There are 14 features for every patient. In particular, there is data from 4 hospitals but I will use the Cleveland Database because it is properly processed. The dataset have 297 instances. The dataset link is : 
-**http://archive.ics.uci.edu/ml/datasets/heart+Disease**   
+**http://archive.ics.uci.edu/ml/datasets/heart+Disease** .  
+The different feature desciption : 
+
+1. age: continuous  
+
+2. sex: categorical, 2 values {0: female, 1: male}  
+
+3. cp (chest pain type): categorical, 4 values  
+    {1: typical angina, 2: atypical angina, 3: non-angina,4: asymptomatic angina} 
+    
+4. restbp (resting blood pressure on admission to hospital): continuous (mmHg)  
+
+5. chol (serum cholesterol level): continuous (mg/dl)  
+
+6. fbs (fasting blood sugar): categorical, 2 values  
+    {0: <= 120 mg/dl, 1: > 120 mg/dl}  
+    
+7. restecg (resting electrocardiography): categorical, 3 values  
+    {0: normal, 1: ST-T wave abnormality, 2: left ventricular hypertrophy}  
+    
+8. thalach (maximum heart rate achieved): continuous  
+
+9. exang (exercise induced angina): categorical, 2 values {0: no, 1: yes}  
+
+10.oldpeak (ST depression induced by exercise relative to rest): continuous  
+
+11. slope (slope of peak exercise ST segment): categorical, 3 values   
+    {1: upsloping, 2: flat, 3: downsloping}  
+    
+12. ca (number of major vessels colored by fluoroscopy): discrete (0,1,2,3)  
+
+13. thal: categorical, 3 values {3: normal, 6: fixed defect, 7: reversible defect}  
+
+14. num (diagnosis of heart disease): categorical, 5 values  
+    {0: less than 50% narrowing in any major vessel, 1-4: more than 50% narrowing in 1-4 vessels}  
+    
+
+
 Below is the image descibing the dataset.
 
 ![](http://imgur.com/g476e9q.jpg)  
@@ -131,7 +168,20 @@ The final model performs really well in comparison of the Benchmark model. Our b
 
 ## V. Conclusion
 
+### Free Form Visualization
+I visualized a different feature in this dataset that there are correlations between the features age, thalach and ca. Here are some graphs of the correlations.  
+
+![](http://imgur.com/FIVSGyA.jpg)   
+
+
+![](http://imgur.com/4HgR3q6.jpg)
+
+
+
 ### Reflection
+The major challenge I faced during this process was to select an appropriate model. So, I tested upon various models and Iopted for the best one i.e. Support Vector Machines.  
+
+The project was started with acheiving an accuracy atleast equals to Benchmark model, Gaussian Naive Bayes i.e. 78.33%. But by using Support Vector Machines and by optimizing the model using cross validation score we were able to arrive at an accuracy of 85%. Final features were selected on the basis of cross validation score, keeping the model deviance as low as possible.
 
 
 ### Improvement
