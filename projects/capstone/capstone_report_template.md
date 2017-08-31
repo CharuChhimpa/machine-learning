@@ -62,7 +62,7 @@ The different feature desciption :
 
 9. exang (exercise induced angina): categorical, 2 values {0: no, 1: yes}  
 
-10.oldpeak (ST depression induced by exercise relative to rest): continuous  
+10. oldpeak (ST depression induced by exercise relative to rest): continuous  
 
 11. slope (slope of peak exercise ST segment): categorical, 3 values   
     {1: upsloping, 2: flat, 3: downsloping}  
