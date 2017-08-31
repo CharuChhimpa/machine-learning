@@ -41,7 +41,12 @@ I am using the UCI Heart Disease dataset for training the model. There are 14 fe
 **http://archive.ics.uci.edu/ml/datasets/heart+Disease**   
 Below is the image descibing the dataset.
 
-![](http://imgur.com/g476e9q.jpg)
+![](http://imgur.com/g476e9q.jpg)  
+
+This second image describes various characteristics of the features : 
+
+![](http://imgur.com/gvhGE92.jpg)  
+
 
 
 ### Exploratory Visualization
@@ -69,7 +74,9 @@ The advantages of support vector machines are:
 
 - Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.  
 
-- Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.  
+- Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.    
+
+I have tried out several other algorithms too, but the accuracy that came out was lower than the model chosen (i.e. SVM ). SVMs are well suited for this problem because we have so many features and SVMs performs quite well in high dimensional spaces. And even with SVM we can set a regularisation parameter using which we can avoid overfitting.  
 
 
 ### Benchmark
@@ -80,9 +87,7 @@ the values in x associated with class c, and let σ^2_c be the variance of the v
 
 ![](http://imgur.com/4Un9Q5f.jpg)    
 
-I’ll be using the Naive Bayes classifier as the benchmark model because it will always predict either of the one class.  
-
-I’ll be looking to maximize the accuracy of the predictions using this model.
+I’ll be looking to maximize the accuracy of the predictions using Gaussian Naive Bayes model.
 
 
 ## III. Methodology
@@ -91,26 +96,33 @@ I’ll be looking to maximize the accuracy of the predictions using this model.
 The features which are having more than two values are converted to dummy variables and given a different name for each variable. After converting the variables there are total of 18 variables.
 
 ### Implementation
-First the Benchmark Model, Gaussian Naive Bayes is trained and it comes out to be with an accuracy of 78.33 %.  
+I am using the UCI Heart Disease dataset for training the model. There are 14 features for every patient.  
 
-After that Support Vector Machines are trained using the sklearn SVC and it came out with an accuracy of  85% . For increasing the accurcay we are Optimizing logistic regression on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that yields the best accuracy score.  
+First we trained with the Benchmark Model, Gaussian Naive Bayes. The explanation for this model is given in the section above. The dataset was divided into training and testing datasets by using sklearn functions. The model was trained and finally accuracy was calculated on the testing data. The accuracy it came out with is 78.33 %.   
+
+After that Support Vector Machines are trained using the sklearn SVC and the same process was repeated to break the dataset into Testing and Training.  
+
+For increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that yields the best accuracy score.  
 
 Try eliminating features with a non-significant coefficient, one by one, while keeping the model deviance as low as possible. We'll use this second method for the final results.  
 
-The final accuracy that we got after this is : 
+Finally the significant features are selected and the final accuracy that we came with after the training is 85%. 
 
 ### Refinement
-The refinement that I made is that I used cross validation score to find the set of features that yields the best accuracy score .   
+Initially we trained on the Benchmark model, which came out with an accuracy of 78.33%.  
 
-By using this we will eliminate features with a non - significant coefficient, one by one, while keeping the model deviance as low as possible. We will use this metthod for the final results. 
+Then the SVMs are trained using the SVC module of Sklearn and for increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that yields the best accuracy score.  
 
+Try eliminating features with a non-significant coefficient, one by one, while keeping the model deviance as low as possible. We'll use this second method for the final results. 
 
 ## IV. Results
 
 ### Model Evaluation and Validation
-The final model came out with the accuracy of 85%  . The final features are selected on the basis of cross validation score. So, its a quite robust model tested properly.    
+The final model came out with the accuracy of 85%  . The final features are selected on the basis of cross validation score.  
+The model was tested on the test data set here is the image showing the result :  
+![](http://imgur.com/mpjb2yc.jpg)    
 
-The initial model of SVMs is tuned properly to get a an accuracy of 85%.
+The initial model of SVMs is tuned properly using cross validation score to get a an accuracy of 85%. We also tested the model on random patient features. 
 
 
 
@@ -120,7 +132,6 @@ The final model performs really well in comparison of the Benchmark model. Our b
 ## V. Conclusion
 
 ### Reflection
-The SVM model is properly trained and optimized using cross validation score. I faced a problem in slecting optimal model for this dataset then I tested it with several models and finally concluded on Support Vector Machines. The final accuracy of this model is quite good i.e.   
 
 
 ### Improvement
