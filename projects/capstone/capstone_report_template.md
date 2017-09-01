@@ -113,7 +113,22 @@ The advantages of support vector machines are:
 
 - Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.    
 
-I have tried out several other algorithms too, but the accuracy that came out was lower than the model chosen (i.e. SVM ). SVMs are well suited for this problem because we have so many features and SVMs performs quite well in high dimensional spaces. And even with SVM we can set a regularisation parameter using which we can avoid overfitting.  
+I have tried out several other algorithms too, but the accuracy that came out was lower than the model chosen (i.e. SVM ). SVMs are well suited for this problem because we have so many features and SVMs performs quite well in high dimensional spaces. And even with SVM we can set a regularisation parameter using which we can avoid overfitting.    
+
+A support vector machine constructs a hyperplane or set of hyperplanes in a high- or infinite-dimensional space, which can be used for classification, regression, or other tasks. Intuitively, a good separation is achieved by the hyperplane that has the largest distance to the nearest training-data point of any class (so-called functional margin), since in general the larger the margin the lower the generalization error of the classifier.  
+
+The other algorithms that I have tried are:    
+- **Gaussian Naive Bayes** : This is our Benchmark model. Its explained above properly.  
+
+- **Logistic Regression** : The goal of logistic regression is to find the best fitting model to describe the relationship between the characteristic of interest (dependent variable = response or outcome variable) and a set of independen variables. Logistic regression generates the coefficients (and its standard errors and significance levels) of a formula to predict a logit transformation of the probability of presence of the characteristic of interest:   
+
+![](http://imgur.com/ATpj2Ay.jpg)    
+
+ 
+where p is the probability of presence of the characteristic of interest.  
+
+- **Decision Tree Classifier** :  The decision tree classifiers organized a series of test questions and conditions in a tree structure. In the decision tree, the root and internal nodes contain attribute test conditions to separate recordes that have different characteristics. All the terminal node is assigned a class lable Yes or No.
+
 
 
 ### Benchmark
@@ -137,7 +152,9 @@ I am using the UCI Heart Disease dataset for training the model. There are 14 fe
 
 First we trained with the Benchmark Model, Gaussian Naive Bayes. The explanation for this model is given in the section above. The dataset was divided into training and testing datasets by using sklearn functions. The model was trained and finally accuracy was calculated on the testing data. The accuracy it came out with is 78.33 %.   
 
-After that Support Vector Machines are trained using the sklearn SVC and the same process was repeated to break the dataset into Testing and Training.  
+To select the final model we went through some other algorithms, that are Logistic Regression and Decision Tree Classifier. These algorithms after trainning and optimizing the models came out with an accuracy of 81 and 83% respectively on the test datasets. 
+
+After all this Support Vector Machines are trained using the sklearn SVC and the same process was repeated to break the dataset into Testing and Training.  
 
 For increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that yields the best accuracy score.  
 
@@ -146,18 +163,29 @@ Try eliminating features with a non-significant coefficient, one by one, while k
 Finally the significant features are selected and the final accuracy that we came with after the training is 85%. 
 
 ### Refinement
-Initially we trained on the Benchmark model, which came out with an accuracy of 78.33%.  
+Initially we trained on the Benchmark model, which came out with an accuracy of 78.33%.    
+
+Then after that we tested upon various other models like Logistic Regression and Decision Tree Classifiers. Sklearn was used to provide libraries for these models. The final accuracies these models came wih are 81 and 83% respectively.
 
 Then the SVMs are trained using the SVC module of Sklearn and for increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that yields the best accuracy score.  
 
-Try eliminating features with a non-significant coefficient, one by one, while keeping the model deviance as low as possible. We'll use this second method for the final results. 
+Try eliminating features with a non-significant coefficient, one by one, while keeping the model deviance as low as possible. We used this second method for the final results.   
+
+Finally the SVM model is chosen because it came out with an accuracy of 85%, which was greater than every other model.
+
 
 ## IV. Results
 
 ### Model Evaluation and Validation
 The final model came out with the accuracy of 85%  . The final features are selected on the basis of cross validation score.  
 The model was tested on the test data set here is the image showing the result :  
-![](http://imgur.com/mpjb2yc.jpg)    
+![](http://imgur.com/mpjb2yc.jpg)  
+
+I also tested the model on 10 random patients from some other hospital dataset. Below shown are the features of 10 patients and they are arranged in the order of  : [ "age", "sex", "cp", "restbp", "chol",   
+
+![](http://imgur.com/mpjb2yc.jpg)  
+
+
 
 The initial model of SVMs is tuned properly using cross validation score to get a an accuracy of 85%. We also tested the model on random patient features. 
 
