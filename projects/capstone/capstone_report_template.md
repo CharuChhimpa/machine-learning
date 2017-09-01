@@ -181,11 +181,11 @@ The final model came out with the accuracy of 85%  . The final features are sele
 The model was tested on the test data set here is the image showing the result :  
 ![](http://imgur.com/mpjb2yc.jpg)  
 
-I also tested the model on 10 random patients from some other hospital dataset. Below shown are the features of 10 patients and they are arranged in the order of  : [ "age", "sex", "cp", "restbp", "chol",   
+I also tested the model on 10 random patients from some other hospital dataset. Below shown are the features of 10 patients and they are arranged in the order of  : [ "age", "sex", "cp", "restbp", "chol",  "fbs", "restecg", "thalach", "exang", "oldpeak", "slope", "ca", "thal"] : 
 
-![](http://imgur.com/mpjb2yc.jpg)  
+![](http://imgur.com/PqagP68.jpg)  
 
-
+The model predicted clas for all these patients was exactly correct. This shows the robustness of our model, that this model also works on the patients from some other hospital also.
 
 The initial model of SVMs is tuned properly using cross validation score to get a an accuracy of 85%. We also tested the model on random patient features. 
 
