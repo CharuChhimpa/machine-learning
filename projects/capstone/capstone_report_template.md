@@ -89,13 +89,11 @@ This second image describes various characteristics of the features :
 ### Exploratory Visualization
 The things that are explored in the previous section are :
 
-#### Feature Distributions Compared for Disease and No Disease
+#### Histograms for various features
 
-![](http://imgur.com/l8KuwcC.jpg) 
+![](https://imgur.com/16wMK8u.jpg) 
 
-![](http://imgur.com/JY012PQ.jpg)  
-
-![](http://imgur.com/cIJ2peB.jpg) 
+![](https://imgur.com/9sBvAaL.jpg)  
 
 
 
