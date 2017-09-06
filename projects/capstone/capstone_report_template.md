@@ -195,12 +195,9 @@ The final model performs really well in comparison of the Benchmark model. Our b
 ## V. Conclusion
 
 ### Free Form Visualization
-I visualized a different feature in this dataset that there are correlations between the features age, thalach and ca. Here are some graphs of the correlations.  
+I visualized a different thing in this dataset that there are correlations between the features. 
+![](https://imgur.com/ZezpUZk.jpg)   
 
-![](http://imgur.com/FIVSGyA.jpg)   
-
-
-![](http://imgur.com/4HgR3q6.jpg)
 
 
 
@@ -220,3 +217,4 @@ We can improve the model by further improving the parameters. We can even use gr
 - http://scikit-learn.org/stable/modules/svm.html
 - https://plot.ly/python/ipython-notebook-tutorial/
 - https://stackoverflow.com/questions/32387266/converting-categorical-values-to-binary-using-pandas
+- https://stackoverflow.com/questions/45925011/feature-selection-with-cross-validation-using-scikit-learn-for-anova-test
