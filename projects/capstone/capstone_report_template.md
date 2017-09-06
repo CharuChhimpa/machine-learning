@@ -219,3 +219,4 @@ We can improve the model by further improving the parameters. We can even use gr
 - http://psrcentre.org/images/extraimages/84.%201211402.pdf  
 - http://scikit-learn.org/stable/modules/svm.html
 - https://plot.ly/python/ipython-notebook-tutorial/
+- https://stackoverflow.com/questions/32387266/converting-categorical-values-to-binary-using-pandas
