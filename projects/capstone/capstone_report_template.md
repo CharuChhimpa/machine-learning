@@ -220,3 +220,4 @@ We can improve the model by further improving the parameters. We can even use gr
 - http://archive.ics.uci.edu/ml/datasets/heart+Disease  
 - http://psrcentre.org/images/extraimages/84.%201211402.pdf  
 - http://scikit-learn.org/stable/modules/svm.html
+- https://plot.ly/python/ipython-notebook-tutorial/
