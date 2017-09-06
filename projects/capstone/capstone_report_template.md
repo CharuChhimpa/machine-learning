@@ -217,4 +217,5 @@ We can improve the model by further improving the parameters. We can even use gr
 - http://scikit-learn.org/stable/modules/svm.html
 - https://plot.ly/python/ipython-notebook-tutorial/
 - https://stackoverflow.com/questions/32387266/converting-categorical-values-to-binary-using-pandas
+- http://scikit-learn.org/stable/modules/cross_validation.html
 - https://stackoverflow.com/questions/45925011/feature-selection-with-cross-validation-using-scikit-learn-for-anova-test
