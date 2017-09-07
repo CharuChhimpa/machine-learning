@@ -117,18 +117,18 @@ I have tried out several other algorithms too, but the accuracy that came out wa
 
 Let's see it like this :   
 
-We are given a training dataset of {\displaystyle n} n points of the form
+We are given a training dataset of n points of the form
 
 ![](https://imgur.com/7AGH2uX.jpg)  
 
-where the {\displaystyle y_{i}} y_{i} are either 1 or −1, each indicating the class to which the point {\displaystyle {\vec {x}}_{i}} {\vec {x}}_{i} belongs. Each {\displaystyle {\vec {x}}_{i}} {\vec {x}}_{i} is a {\displaystyle p} p-dimensional real vector. We want to find the "maximum-margin hyperplane" that divides the group of points {\displaystyle {\vec {x}}_{i}} {\vec {x}}_{i} for which {\displaystyle y_{i}=1} y_{i}=1 from the group of points for which {\displaystyle y_{i}=-1} y_{i}=-1, which is defined so that the distance between the hyperplane and the nearest point {\displaystyle {\vec {x}}_{i}} {\vec {x}}_{i} from either group is maximized.   
+where the y_i are either 1 or −1, each indicating the class to which the point x_i belongs. Each x_i is a p-dimensional real vector. We want to find the "maximum-margin hyperplane" that divides the group of points x_i for which y_i = 1 from the group of points for which y_i = -1, which is defined so that the distance between the hyperplane and the nearest point x_i from either group is maximized.   
 
-Any hyperplane can be written as the set of points {\displaystyle {\vec {x}}} {\vec {x}} satisfying
+Any hyperplane can be written as the set of points x satisfying
 
 
 ![](https://imgur.com/kSznTKc.jpg)    
 
-where {\displaystyle {\vec {w}}} {\vec {w}} is the (not necessarily normalized) normal vector to the hyperplane. This is much like Hesse normal form, except that {\displaystyle {\vec {w}}} {\vec {w}} is not necessarily a unit vector. The parameter {\displaystyle {\tfrac {b}{\|{\vec {w}}\|}}} {\tfrac {b}{\|{\vec {w}}\|}} determines the offset of the hyperplane from the origin along the normal vector {\displaystyle {\vec {w}}} {\vec {w}}.
+where w is the (not necessarily normalized) normal vector to the hyperplane. This is much like Hesse normal form, except that w is not necessarily a unit vector. The parameter b/||w|| determines the offset of the hyperplane from the origin along the normal vector w.
 
 
 
