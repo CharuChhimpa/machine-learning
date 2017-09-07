@@ -113,7 +113,24 @@ The advantages of support vector machines are:
 
 I have tried out several other algorithms too, but the accuracy that came out was lower than the model chosen (i.e. SVM ). SVMs are well suited for this problem because we have so many features and SVMs performs quite well in high dimensional spaces. And even with SVM we can set a regularisation parameter using which we can avoid overfitting.    
 
-A support vector machine constructs a hyperplane or set of hyperplanes in a high- or infinite-dimensional space, which can be used for classification, regression, or other tasks. Intuitively, a good separation is achieved by the hyperplane that has the largest distance to the nearest training-data point of any class (so-called functional margin), since in general the larger the margin the lower the generalization error of the classifier.  
+- **SVM** :  A support vector machine constructs a hyperplane or set of hyperplanes in a high- or infinite-dimensional space, which can be used for classification, regression, or other tasks. Intuitively, a good separation is achieved by the hyperplane that has the largest distance to the nearest training-data point of any class (so-called functional margin), since in general the larger the margin the lower the generalization error of the classifier.    
+
+Let's see it like this :   
+
+We are given a training dataset of {\displaystyle n} n points of the form
+
+![](https://imgur.com/7AGH2uX.jpg)  
+
+where the {\displaystyle y_{i}} y_{i} are either 1 or −1, each indicating the class to which the point {\displaystyle {\vec {x}}_{i}} {\vec {x}}_{i} belongs. Each {\displaystyle {\vec {x}}_{i}} {\vec {x}}_{i} is a {\displaystyle p} p-dimensional real vector. We want to find the "maximum-margin hyperplane" that divides the group of points {\displaystyle {\vec {x}}_{i}} {\vec {x}}_{i} for which {\displaystyle y_{i}=1} y_{i}=1 from the group of points for which {\displaystyle y_{i}=-1} y_{i}=-1, which is defined so that the distance between the hyperplane and the nearest point {\displaystyle {\vec {x}}_{i}} {\vec {x}}_{i} from either group is maximized.   
+
+Any hyperplane can be written as the set of points {\displaystyle {\vec {x}}} {\vec {x}} satisfying
+
+
+![](https://imgur.com/kSznTKc.jpg)    
+
+where {\displaystyle {\vec {w}}} {\vec {w}} is the (not necessarily normalized) normal vector to the hyperplane. This is much like Hesse normal form, except that {\displaystyle {\vec {w}}} {\vec {w}} is not necessarily a unit vector. The parameter {\displaystyle {\tfrac {b}{\|{\vec {w}}\|}}} {\tfrac {b}{\|{\vec {w}}\|}} determines the offset of the hyperplane from the origin along the normal vector {\displaystyle {\vec {w}}} {\vec {w}}.
+
+
 
 The other algorithms that I have tried are:    
 - **Gaussian Naive Bayes** : This is our Benchmark model. Its explained above properly.  
@@ -148,22 +165,22 @@ The features which are having more than two values are converted to dummy variab
 ### Implementation
 I am using the UCI Heart Disease dataset for training the model. There are 14 features for every patient.  
 
-First we trained with the Benchmark Model, Gaussian Naive Bayes. The explanation for this model is given in the section above. The dataset was divided into training and testing datasets by using sklearn functions. The model was trained and finally accuracy was calculated on the testing data. The accuracy it came out with is 80 %.   
+First we trained with the Benchmark Model, Gaussian Naive Bayes. The explanation for this model is given in the section above. The dataset was divided into training and testing datasets by using sklearn train_test_split function. The model was trained and finally accuracy was calculated on the testing data. The accuracy it came out with is 80 %.   
 
 To select the final model we went through some other algorithms, that are Logistic Regression and Decision Tree Classifier. These algorithms after trainning and optimizing the models came out with an accuracy of 80 and 82% respectively on the test datasets. 
 
 After all this Support Vector Machines are trained using the sklearn SVC and the same process was repeated to break the dataset into Testing and Training.  
 
-For increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that gives us the best accuracy.  
+For increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. 
 
-Finally the significant features are selected and the final accuracy that we came with after the training is 83%. 
+Finally the accuracy that we came with after the training is 83%. 
 
 ### Refinement
 Initially we trained on the Benchmark model, which came out with an accuracy of 80%.    
 
 Then after that we tested upon various other models like Logistic Regression and Decision Tree Classifiers. Sklearn was used to provide libraries for these models. The final accuracies these models came wih are 80 and 82% respectively.
 
-Then the SVMs are trained using the SVC module of Sklearn and for increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that gives us the best accuracy score.   
+Then the SVMs are trained using the SVC module of Sklearn and for increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method.
 
 Finally the SVM model is chosen because it came out with an accuracy of 83%, which was greater than every other model.
 
@@ -171,7 +188,8 @@ Finally the SVM model is chosen because it came out with an accuracy of 83%, whi
 ## IV. Results
 
 ### Model Evaluation and Validation
-The final model came out with the accuracy of 83%  . The final features are selected on the basis of cross validation score.  
+The final model came out with the accuracy of 83%  .   
+
 The model was tested on the test data set here is the image showing the result :  
 ![](http://imgur.com/mpjb2yc.jpg)  
 
@@ -200,8 +218,7 @@ I visualized a different thing in this dataset that there are correlations betwe
 ### Reflection
 The major challenge I faced during this process was to select an appropriate model. So, I tested upon various models and Iopted for the best one i.e. Support Vector Machines.  
 
-The project was started with acheiving an accuracy atleast equals to Benchmark model, Gaussian Naive Bayes i.e. 80%. But by using Support Vector Machines and by optimizing the model using cross validation score we were able to arrive at an accuracy of 83%. Final features were selected on the basis of cross validation score, keeping the model deviance as low as possible.
-
+The project was started with acheiving an accuracy atleast equals to Benchmark model, Gaussian Naive Bayes i.e. 80%. But by using Support Vector Machines and by optimizing the model using cross validation score we were able to arrive at an accuracy of 83%. 
 
 ### Improvement
 We can improve the model by further improving the parameters. We can even use grid search to get more optmized results.
