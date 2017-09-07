@@ -154,9 +154,7 @@ To select the final model we went through some other algorithms, that are Logist
 
 After all this Support Vector Machines are trained using the sklearn SVC and the same process was repeated to break the dataset into Testing and Training.  
 
-For increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that yields the best accuracy score.  
-
-Try eliminating features with a non-significant coefficient, one by one, while keeping the model deviance as low as possible. We'll use this second method for the final results.  
+For increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that gives us the best accuracy.  
 
 Finally the significant features are selected and the final accuracy that we came with after the training is 83%. 
 
@@ -165,9 +163,7 @@ Initially we trained on the Benchmark model, which came out with an accuracy of 
 
 Then after that we tested upon various other models like Logistic Regression and Decision Tree Classifiers. Sklearn was used to provide libraries for these models. The final accuracies these models came wih are 80 and 82% respectively.
 
-Then the SVMs are trained using the SVC module of Sklearn and for increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that yields the best accuracy score.  
-
-Try eliminating features with a non-significant coefficient, one by one, while keeping the model deviance as low as possible. We used this second method for the final results.   
+Then the SVMs are trained using the SVC module of Sklearn and for increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that gives us the best accuracy score.   
 
 Finally the SVM model is chosen because it came out with an accuracy of 83%, which was greater than every other model.
 
@@ -215,7 +211,7 @@ We can improve the model by further improving the parameters. We can even use gr
 - http://archive.ics.uci.edu/ml/datasets/heart+Disease  
 - http://psrcentre.org/images/extraimages/84.%201211402.pdf  
 - http://scikit-learn.org/stable/modules/svm.html
-- https://plot.ly/python/ipython-notebook-tutorial/
+- https://machinelearningmastery.com/visualize-machine-learning-data-python-pandas/
 - https://chrisalbon.com/python/pandas_convert_categorical_to_dummies.html
 - https://stackoverflow.com/questions/12525722/normalize-data-in-pandas
 - https://stackoverflow.com/questions/42075986/scikitlearn-score-dataset-after-cross-validation
