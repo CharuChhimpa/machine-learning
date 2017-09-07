@@ -78,11 +78,11 @@ The different feature desciption :
 
 Below is the image descibing the dataset.
 
-![](http://imgur.com/g476e9q.jpg)  
+![](https://imgur.com/jW34ndU.jpg)  
 
 This second image describes various characteristics of the features : 
 
-![](http://imgur.com/gvhGE92.jpg)  
+![](https://imgur.com/IIqGRgx.jpg)  
 
 
 
@@ -143,14 +143,14 @@ I’ll be looking to maximize the accuracy of the predictions using Gaussian Nai
 ## III. Methodology
 
 ### Data Preprocessing
-The features which are having more than two values are converted to dummy variables and given a different name for each variable. After converting the variables there are total of 18 variables.
+The features which are having more than two values are converted to dummy variables and given a different name for each variable. After converting the variables there are total of 24 features.
 
 ### Implementation
 I am using the UCI Heart Disease dataset for training the model. There are 14 features for every patient.  
 
-First we trained with the Benchmark Model, Gaussian Naive Bayes. The explanation for this model is given in the section above. The dataset was divided into training and testing datasets by using sklearn functions. The model was trained and finally accuracy was calculated on the testing data. The accuracy it came out with is 78.33 %.   
+First we trained with the Benchmark Model, Gaussian Naive Bayes. The explanation for this model is given in the section above. The dataset was divided into training and testing datasets by using sklearn functions. The model was trained and finally accuracy was calculated on the testing data. The accuracy it came out with is 80 %.   
 
-To select the final model we went through some other algorithms, that are Logistic Regression and Decision Tree Classifier. These algorithms after trainning and optimizing the models came out with an accuracy of 81 and 83% respectively on the test datasets. 
+To select the final model we went through some other algorithms, that are Logistic Regression and Decision Tree Classifier. These algorithms after trainning and optimizing the models came out with an accuracy of 80 and 82% respectively on the test datasets. 
 
 After all this Support Vector Machines are trained using the sklearn SVC and the same process was repeated to break the dataset into Testing and Training.  
 
@@ -158,24 +158,24 @@ For increasing the accurcay, Support Vector Machines are optimized on accuracy s
 
 Try eliminating features with a non-significant coefficient, one by one, while keeping the model deviance as low as possible. We'll use this second method for the final results.  
 
-Finally the significant features are selected and the final accuracy that we came with after the training is 85%. 
+Finally the significant features are selected and the final accuracy that we came with after the training is 83%. 
 
 ### Refinement
-Initially we trained on the Benchmark model, which came out with an accuracy of 78.33%.    
+Initially we trained on the Benchmark model, which came out with an accuracy of 80%.    
 
-Then after that we tested upon various other models like Logistic Regression and Decision Tree Classifiers. Sklearn was used to provide libraries for these models. The final accuracies these models came wih are 81 and 83% respectively.
+Then after that we tested upon various other models like Logistic Regression and Decision Tree Classifiers. Sklearn was used to provide libraries for these models. The final accuracies these models came wih are 80 and 82% respectively.
 
 Then the SVMs are trained using the SVC module of Sklearn and for increasing the accurcay, Support Vector Machines are optimized on accuracy score, by using cross-validation. Here we use sklearn since it includes a cross_validation method. By using cross validation score we will find the set of features that yields the best accuracy score.  
 
 Try eliminating features with a non-significant coefficient, one by one, while keeping the model deviance as low as possible. We used this second method for the final results.   
 
-Finally the SVM model is chosen because it came out with an accuracy of 85%, which was greater than every other model.
+Finally the SVM model is chosen because it came out with an accuracy of 83%, which was greater than every other model.
 
 
 ## IV. Results
 
 ### Model Evaluation and Validation
-The final model came out with the accuracy of 85%  . The final features are selected on the basis of cross validation score.  
+The final model came out with the accuracy of 83%  . The final features are selected on the basis of cross validation score.  
 The model was tested on the test data set here is the image showing the result :  
 ![](http://imgur.com/mpjb2yc.jpg)  
 
@@ -183,14 +183,14 @@ I also tested the model on 10 random patients from some other hospital dataset. 
 
 ![](http://imgur.com/PqagP68.jpg)  
 
-The model predicted clas for all these patients was exactly correct. This shows the robustness of our model, that this model also works on the patients from some other hospital also.
+The model predicted class for all these patients was exactly correct. This shows the robustness of our model, that this model also works on the patients from some other hospital also.
 
-The initial model of SVMs is tuned properly using cross validation score to get a an accuracy of 85%. We also tested the model on random patient features. 
+The initial model of SVMs is tuned properly using cross validation score to get a an accuracy of 83%. We also tested the model on random patient features. 
 
 
 
 ### Justification
-The final model performs really well in comparison of the Benchmark model. Our benchmark was to acheive atleast 78% accuracy and our model acheives nearly  85%  accuracy with a standard deviation of  0.008% . This clearly beats the benchmark model and is significant enough to solve the problem.
+The final model performs really well in comparison of the Benchmark model. Our benchmark was to acheive atleast 80% accuracy and our model acheives nearly  83%  accuracy with a standard deviation of  0.038% . This clearly beats the benchmark model and is significant enough to solve the problem.
 
 ## V. Conclusion
 
@@ -204,7 +204,7 @@ I visualized a different thing in this dataset that there are correlations betwe
 ### Reflection
 The major challenge I faced during this process was to select an appropriate model. So, I tested upon various models and Iopted for the best one i.e. Support Vector Machines.  
 
-The project was started with acheiving an accuracy atleast equals to Benchmark model, Gaussian Naive Bayes i.e. 78.33%. But by using Support Vector Machines and by optimizing the model using cross validation score we were able to arrive at an accuracy of 85%. Final features were selected on the basis of cross validation score, keeping the model deviance as low as possible.
+The project was started with acheiving an accuracy atleast equals to Benchmark model, Gaussian Naive Bayes i.e. 80%. But by using Support Vector Machines and by optimizing the model using cross validation score we were able to arrive at an accuracy of 83%. Final features were selected on the basis of cross validation score, keeping the model deviance as low as possible.
 
 
 ### Improvement
@@ -216,6 +216,6 @@ We can improve the model by further improving the parameters. We can even use gr
 - http://psrcentre.org/images/extraimages/84.%201211402.pdf  
 - http://scikit-learn.org/stable/modules/svm.html
 - https://plot.ly/python/ipython-notebook-tutorial/
-- https://stackoverflow.com/questions/32387266/converting-categorical-values-to-binary-using-pandas
-- http://scikit-learn.org/stable/modules/cross_validation.html
-- https://stackoverflow.com/questions/45925011/feature-selection-with-cross-validation-using-scikit-learn-for-anova-test
+- https://chrisalbon.com/python/pandas_convert_categorical_to_dummies.html
+- https://stackoverflow.com/questions/12525722/normalize-data-in-pandas
+- https://stackoverflow.com/questions/42075986/scikitlearn-score-dataset-after-cross-validation
